@@ -1,0 +1,21 @@
+<section class="search-bar">
+  <form [formGroup]="searchForm">
+    <label>
+      <input type="text" placeholder="movie title" formControlName="title">
+    </label>
+  </form>
+</section>
+
+<ul class="movie__list" *ngIf="movies && movies.length">
+  <li class="movie__item" *ngFor="let movie of movies">
+    <img src="{{movie.image}}" alt="" class="movie__image" height="100%">
+
+    <h3 class="movie__title">{{movie.title}}</h3>
+
+    <a class="movie__link" routerLink="/movies/{{movie.id}}"><i class="fas fa-arrow-right"></i></a>
+  </li>
+</ul>
+
+<div class="not-found" *ngIf="movies && !movies.length">
+  <h2>Not found the movie</h2>
+</div>

@@ -1,0 +1,18 @@
+<div class="container" *ngIf="movieModel">
+  <img src="{{movieModel.poster}}" alt="poster" class="movie__poster" *ngIf="movieModel">
+
+  <section class="movie__info" *ngIf="movieModel">
+    <h3 class="movie__title">{{movieModel.title}}</h3>
+
+    <h6 class="movie__year">{{movieModel.year}}</h6>
+
+    <h4 class="movie__plot">{{movieModel.plot}}</h4>
+
+    <h5 class="movie__rating"><span>{{movieModel.rating}}</span><i class="fas fa-star"></i></h5>
+  </section>
+
+</div>
+
+<h3 class="not-found" *ngIf="isNotFound">Not Found Movie</h3>
+
+

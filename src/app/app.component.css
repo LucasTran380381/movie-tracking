@@ -1,0 +1,43 @@
+.gradient-bg {
+  height: 100vh;
+  width: 100vw;
+  background-image: linear-gradient(to top, #fad0c4 0%, #ffd1ff 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.gradient-bg aside {
+  height: 90vh;
+  width: 300px;
+  background: #fafafb;
+  background: linear-gradient(142deg, rgba(250, 250, 251, 0.8043592437) 0%, rgba(252, 252, 252, 0.3) 100%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.gradient-bg aside .user__avatar {
+  height: 200px;
+  width: 200px;
+  border-radius: 999px;
+}
+.gradient-bg aside .user__name {
+  text-align: center;
+  margin-top: 20px;
+}
+.gradient-bg aside nav a {
+  text-decoration: none;
+  color: darkgrey;
+}
+.gradient-bg .divide {
+  width: 20px;
+  height: 90vh;
+}
+.gradient-bg main {
+  height: 90vh;
+  width: 70vw;
+  background: linear-gradient(142deg, rgba(250, 250, 251, 0.8043592437) 0%, rgba(252, 252, 252, 0.3) 100%);
+  padding: 5% 10%;
+}
+
+/*# sourceMappingURL=app.component.css.map */

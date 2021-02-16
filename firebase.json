@@ -1,0 +1,17 @@
+{
+  "hosting": {
+    "site": "movie-tracking",
+    "public": "dist/movie-app",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ],
+    "rewrites": [
+      {
+        "source": "**",
+        "destination": "/index.html"
+      }
+    ]
+  }
+}
